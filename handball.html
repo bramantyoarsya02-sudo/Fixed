@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angkatan 25 Handball SMPN 6 Kota Bogor</title>
+  <style>
+    /* === GLOBAL STYLE === */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      color: #fff;
+    }
+    a {text-decoration: none; color: inherit;}
+    img {max-width: 100%; display: block; border-radius: 10px;}
+
+    /* === HEADER === */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 5%;
+      z-index: 1000;
+    }
+    header img {height: 50px; border-radius: 8px;}
+    nav a {
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color .3s;
+    }
+    nav a:hover {color: #FFD700;}
+
+    /* === HERO === */
+    .hero {
+      min-height: 100vh;
+      background: url("https://i.ibb.co.com/Lz4JbdrW/IMG-20250829-WA0013.jpg") center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .hero h1 {font-size: 3rem; margin-bottom: 10px;}
+    .hero h2 {font-size: 1.8rem; margin-bottom: 10px;}
+    .hero p {font-size: 1rem; margin-bottom: 20px;}
+    .btn {
+      background: #FFD700;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {background: #fff;}
+
+    /* === SECTION === */
+    section {padding: 70px 5%; text-align: center;}
+    section h2 {font-size: 2rem; margin-bottom: 30px; color: #FFD700;}
+
+    /* === TENTANG === */
+    .about p {max-width: 800px; margin: 0 auto 20px;}
+    .highlight {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .highlight div {
+      background: rgba(255,255,255,0.1);
+      padding: 15px 25px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    /* === TIM === */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 20px;
+    }
+    .player {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 15px;
+      transition: transform .3s;
+    }
+    .player:hover {transform: translateY(-8px);}
+    .player img {width: 200px; height: 200px; object-fit: cover; margin: 0 auto;}
+    .player h3 {margin: 10px 0 5px; font-size: 1.2rem;}
+    .player p {font-size: 0.9rem; opacity: 0.9;}
+
+    /* === GALERI === */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 15px;
+    }
+    .gallery-grid img {
+      border-radius: 12px;
+      transition: transform .4s;
+    }
+    .gallery-grid img:hover {transform: scale(1.05);}
+
+    /* === KONTAK === */
+    .contact p {margin-bottom: 10px;}
+    .social a {
+      margin: 0 10px;
+      font-weight: bold;
+      background: #FFD700;
+      color: #000;
+      padding: 6px 15px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+    /* === FOOTER === */
+    footer {
+      background: rgba(0,0,0,0.8);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width:768px) {
+      .hero h1 {font-size: 2rem;}
+      .hero h2 {font-size: 1.2rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#"><img src="https://i.ibb.co.com/tTBybPT1/Screenshot-20250828-212100-2.jpg" alt="Logo"></a>
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#tim">Tim</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Angkatan 25 Handball</h1>
+    <h2>SMPN 6 Kota Bogor</h2>
+    <p>KELOR STREET HANDBALL P6 BERSINAR-BERSINAR-BERSINARRR.</p>
+    <a href="#galeri" class="btn">Lihat Galeri</a>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="about">
+    <h2>Tentang Tim</h2>
+    <p>Tim Handball SMPN 6 Kota Bogor Angkatan 25 adalah wujud semangat muda yang berani bersaing, menjunjung tinggi sportivitas, dan selalu berjuang bersama. Kami percaya dengan kerja keras dan kekompakan, prestasi akan terus lahir.</p>
+    <div class="highlight">
+      <div>Kerja Sama</div>
+      <div>Sportivitas</div>
+      <div>Disiplin</div>
+    </div>
+  </section>
+
+  <!-- TIM -->
+  <section id="tim">
+    <h2>Pemain Handball P6</h2>
+    <div class="team-grid">
+      <div class="player">
+        <img src="https://i.ibb.co.com/yJ0hRDZ/IMG-20250829-WA0004.jpg" alt="">
+        <h3>Bramantyo</h3><p>Wing Kanan - #33</p>
+      </div>
+      <div class="player">
+        <img src="https://i.ibb.co.com/HLhMfm59/IMG-20250829-WA0002.jpg" alt="">
+        <h3>Haikal</h3><p>Bek Kiri - #31</p>
+      </div>
+      <div class="player">
+        <img src="https://i.ibb.co.com/HTBtx1vY/IMG-20250829-WA0009.jpg" alt="">
+        <h3>Danen</h3><p>Pivot - #3</p>
+      </div>
+      <div class="player">
+        <img src="https://i.ibb.co.com/Xrh2fnL0/IMG-20250829-WA0003.jpg" alt="">
+        <h3>Herhan</h3><p>Wing Kiri - #12</p>
+      </div>
+      <div class="player">
+        <img src="https://i.ibb.co.com/nN0bnhjd/IMG-20250829-WA0000.jpg" alt="">
+        <h3>Deren</h3><p>Bek Kanan - #20</p>
+      </div>
+      <div class="player">
+        <img src="https://i.ibb.co.com/BXKSrSR/IMG-20250829-WA0007.jpg" alt="">
+        <h3>Noval</h3><p>Playmaker - #24</p>
+      </div>
+      <div class="player">
+        <img src="https://i.ibb.co.com/MDLvYLWg/IMG-20250829-WA0008.jpg" alt="">
+        <h3>Kia Rizky</h3><p>Wing Kiri - #6</p>
+      </div>
+      <div class="player">
+        <img src="https://i.ibb.co.com/C3k3vgHR/IMG-20250829-WA0005.jpg" alt="">
+        <h3>Fatir</h3><p>Wing Kanan - #10</p>
+      </div>
+      <div class="player">
+        <img src="https://i.ibb.co.com/vCBp6Jdw/IMG-20250829-WA0012.jpg" alt="">
+        <h3>Joni</h3><p>Pivot - #99</p>
+      </div>
+      <div class="player">
+        <img src="https://i.ibb.co.com/3YGwrVrd/IMG-20250829-WA0001.jpg" alt="">
+        <h3>Nabil</h3><p>Goalkeeper - #4</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section id="galeri">
+    <h2>Momen Pertandingan & Prestasi</h2>
+    <div class="gallery-grid">
+      <img src="https://i.ibb.co.com/SXDT2rjk/IMG-20250828-WA0133.jpg" alt="">
+      <img src="https://i.ibb.co.com/yF24XRND/IMG-20250828-WA0110.jpg" alt="">
+      <img src="https://i.ibb.co.com/Xrj0HJH1/IMG-20250828-WA0155.jpg" alt="">
+      <img src="https://i.ibb.co.com/0yCSmMRr/IMG-20250828-WA0120.jpg" alt="">
+      <img src="https://i.ibb.co.com/1G6kynPS/Screenshot-20250829-083111-2.jpg" alt="">
+      <img src="https://i.ibb.co.com/tPQNV3x9/IMG-20250829-WA0018.jpg" alt="">
+      <img src="https://i.ibb.co.com/JjFkPZp7/IMG-20250829-WA0019.jpg" alt="">
+      <img src="https://i.ibb.co.com/DDphQjXH/Screenshot-20250829-101141-2.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="contact">
+    <h2>Hubungi Kami</h2>
+    <p>WhatsApp: <a href="https://wa.me/6289514466295" target="_blank">+62 895-1446-6295</a></p>
+    <p>Alamat: Jl. Dr. Semeru Gg. Kelor No.4, RT.02/RW.09, Menteng, Kec. Bogor Bar., Kota Bogor, Jawa Barat 16111</p>
+    <p>Email: handballsmp6@gmail.com</p>
+    <div class="social">
+      <a href="https://instagram.com/handballsmp6" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 SMPN 6 Kota Bogor - Tim Handball.
+  </footer>
+
+</body>
+</html>
